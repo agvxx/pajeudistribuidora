@@ -1,3 +1,5 @@
+<style>
+
 :root {
     --white-color: #FFFFFF;
     --gap: 3rem;
@@ -137,3 +139,4 @@
     .intro-2 img:hover {
       transform: translate(-3%, 3%);
     }
+</style>
