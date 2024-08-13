@@ -1,1 +1,139 @@
-
+:root {
+    --white-color: #FFFFFF;
+    --gap: 3rem;
+    --primary-color: #0A1128;
+    --light-gray-color: #eee;}
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+  }
+  
+  h1 {
+    font-size: 6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  body {
+    font-size: 2rem;
+    font-family: sans-serif;
+    color: var(--primary-color);
+    line-height: 1.5;
+  }
+   .menu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    border-bottom: 0.1rem solid var(--light-gray-color);
+   }
+  
+   .main-pajeu {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROtdPBU09EfeU5giuxWneA-1thQ9yypS-A4w&usqp=CAU');
+    color: var(--white-color);
+    background-size: cover;
+    background-position: center center;
+   }
+   .white-bg {
+    background: var(--white-color);
+   }
+   
+   .section {
+    min-height: 100vh;
+   }
+   
+   .main-content {
+    max-width: 120rem ;
+    margin: 0 auto;
+    padding: var(--gap);
+   }
+    .menu-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 0;
+      padding-bottom: 0;
+  }
+    .menu ul {
+      display: flex;
+      list-style: none;
+    }
+    .menu ul li a {
+      display: block;
+      padding: 2rem;
+      font-size: 1.8rem;
+      font-family: 'Montserrat', sans-serif;
+      color: var(--primary-color);
+    }
+    .menu h1 {
+      font-size: 2.3rem;
+      color: var(--primary-color);
+    }
+    .menu h1 a {
+      color: inherit;
+    }
+   
+    .menu-spacing {
+      height: 65px;
+    }
+  
+    .intro-content {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      gap: var(--gap);
+      height: 100vh;
+      position: relative;
+  
+    }
+    .intro, .intro-img {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+    }
+    .intro h2 {
+      font-size: 6rem;
+      margin-bottom: 5rem;
+      text-transform: uppercase;
+      line-height: 1.2;
+    }
+    
+    .intro-img img,
+    .intro-img svg {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    .intro-2 h2 {
+      font-size: 6rem;
+      margin-bottom: 5rem;
+      text-transform: uppercase;
+      color: #0A1128;
+    }
+    
+    .intro-top {
+      display: flex;
+      justify-content: center;
+      height: 80vh;
+      position: relative;
+      text-align: center;
+      top: 8rem;
+  
+    }
+    
+    .intro-2 img {
+      height: 50vh;
+      transition: all 300ms ease-in-out;
+    }
+    .intro-2 img:hover {
+      transform: translate(-3%, 3%);
+    }
